@@ -26,8 +26,8 @@ function fillGear(){
 }
 
 function randomNumber(){
-  var min = 30;
-  var max = 600;
+  var min = 0;
+  var max = 300;
   return Math.random() * (max - min) + min + 'px';
 }
 
