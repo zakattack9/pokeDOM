@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300');
+
 body{
   background: url("../backgrounds/Route20-background.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Roboto Mono', monospace;
 }
 
-div{
+span{
   width: 20px;
   height: 20px;
 }

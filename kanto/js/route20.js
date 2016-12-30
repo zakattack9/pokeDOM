@@ -32,7 +32,7 @@ function randomNumber(){
 }
 
 function randomizePokemon(){
-  var pokemon = document.getElementsByTagName('div');
+  var pokemon = document.getElementsByTagName('span');
   for (var i = 0; i < pokemon.length; i++) {
     var xPosition = randomNumber();
     var yPosition = randomNumber();
@@ -94,17 +94,20 @@ function playAudio(pokeId){
 
 function caughtPokemon(specificPokemon){
   document.getElementById(specificPokemon).style.backgroundImage = "url('../../pokeballSprite.png')";
-  ++count;
-  if (count === 7){
-    document.getElementById("pokemonCaught").innerHTML = "You caught them all!!!"
-    document.getElementById("pokemonLeft").innerHTML = "Good job!!!"
-  }
-  else {
-    document.getElementById("pokemonCaught").innerHTML = "CAUGHT: " + count;
     var str = document.getElementById("pokemonLeft").innerHTML;
-    var res = str.replace(specificPokemon, " ");
-    document.getElementById("pokemonLeft").innerHTML = res;
-  }
+    if (str.includes(specificPokemon)) {
+      ++count;
+      if (count === 7){
+        var audio = new Audio('/kanto/audio/victory.mp3');
+        audio.play();
+        document.getElementById("pokemonCaught").innerHTML = "You caught them all!!!"
+        document.getElementById("pokemonLeft").innerHTML = "Good job!!!"
+        console.log("Professor Oak: Good Job!");
+      }
+      document.getElementById("pokemonCaught").innerHTML = "CAUGHT: " + count;
+      var res = str.replace(specificPokemon, " ");
+      document.getElementById("pokemonLeft").innerHTML = res;
+    }
 }
 
 beginGame();
