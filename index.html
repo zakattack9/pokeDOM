@@ -6,22 +6,28 @@
   <title>Route 20</title>
 </head>
 <body>
-  <span id="tentacool" class="surf" onclick="playAudio(this.id)"></span>
-  <span id="magikarp" class="oldRold" onclick="playAudio(this.id)"></span>
-  <span id="horsea" class="goodRod" onclick="playAudio(this.id)"></span>
-  <span id="kingler" class="goodRod" onclick="playAudio(this.id)"></span>
-  <span id="gyarados" class="superRod" onclick="playAudio(this.id)"></span>
-  <span id="seadra" class="superRod" onclick="playAudio(this.id)"></span>
-  <span id="psyduck" class="superRod" onclick="playAudio(this.id)"></span>
-  <div id="Help">
-    <div id="pokeDOM" onclick="help()">PokeDOM MANUAL</div>
-    <div id="help1" onclick="help1()">HINT 1</div>
-    <div id="help2" onclick="help2()">HINT 2</div>
-    <div id="help3" onclick="help3()">HINT 3</div>
-  </div>
-  <div id="gear">
-    <div id="pokemonCaught">CAUGHT:  </div>
-    <div id="pokemonLeft">MISSING: </div>
+  <div id="main-container">
+    <div id="map-container">
+      <span id="tentacool" class="surf" onclick="playAudio(this.id)"></span>
+      <span id="magikarp" class="oldRold" onclick="playAudio(this.id)"></span>
+      <span id="horsea" class="goodRod" onclick="playAudio(this.id)"></span>
+      <span id="kingler" class="goodRod" onclick="playAudio(this.id)"></span>
+      <span id="gyarados" class="superRod" onclick="playAudio(this.id)"></span>
+      <span id="seadra" class="superRod" onclick="playAudio(this.id)"></span>
+      <span id="psyduck" class="superRod" onclick="playAudio(this.id)"></span>
+    </div>
+    <div id="Help">
+      <div id="pokeDOM" onclick="help()">PokeDOM MANUAL</div>
+      <div id="hint-container">
+        <div id="help1" onclick="help1()">HINT 1</div>
+        <div id="help2" onclick="help2()">HINT 2</div>
+        <div id="help3" onclick="help3()">HINT 3</div>
+      </div>
+    </div>
+    <div id="gear">
+      <div id="pokemonCaught">CAUGHT:  </div>
+      <div id="pokemonLeft">MISSING: </div>
+    </div>
   </div>
 </body>
 <script src="/kanto/js/route20.js"></script>
