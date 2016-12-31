@@ -1,6 +1,6 @@
 function beginGame(){
-  alert("Hello Trainer!");
-  alert("Right-click the page, click the 'Inspect', and click the 'Console' tab!")
+  //alert("Hello Trainer!");
+  //alert("Right-click the page, click the 'Inspect', and click the 'Console' tab!")
   console.log("\n")
   console.log("Professor Oak: Hello Trainer! You made it just on time!");
   console.log("I was in the middle of testing how Pokemon are able to be traded wirelessly.");
@@ -27,8 +27,8 @@ function fillGear(){
 
 function randomNumber(){
   var min = 0;
-  var max = 300;
-  return Math.random() * (max - min) + min + 'px';
+  var max = 25;
+  return Math.random() * (max - min) + min + '%';
 }
 
 function randomizePokemon(){
@@ -108,6 +108,12 @@ function caughtPokemon(specificPokemon){
       var res = str.replace(specificPokemon, " ");
       document.getElementById("pokemonLeft").innerHTML = res;
     }
+}
+
+function tracerFunction(){
+  var cheatPokemon = document.getElementById("tracerName").value;
+  caughtPokemon(cheatPokemon);
+
 }
 
 beginGame();
