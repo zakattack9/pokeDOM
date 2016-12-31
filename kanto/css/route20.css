@@ -32,8 +32,10 @@ span{
   border-color: #000000;
   border-radius: 5px;
   /*position: absolute;*/
-  bottom: 4%;
+  margin-bottom: 15px;
   background-color: black;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #pokeDOM {
@@ -69,8 +71,14 @@ span{
 }
 
 #gear {
-  border-style: double;
-  border-color: blue;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  border:  #706880 8px double;
+  padding: 5px 5px;
+  background-color: #294f62;
+  color: white;
   /*position: absolute;*/
   bottom: 0%;
 }
